@@ -1,0 +1,11 @@
+{
+  "name": "nelsontalks",
+  "version": "1.0.0",
+  "description": "This project is a real-time chat application that allows users to communicate with each other. The application features user authentication, real-time messaging, and an intuitive user interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nelson saly",
+  "license": "ISC"
+}
