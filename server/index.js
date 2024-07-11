@@ -1,4 +1,5 @@
 const express = require('express')
+const mongoose = require('mongoose');
 const cors = require('cors')
 require('dotenv').config()
 const connectDB = require('./config/connectDB')
@@ -11,6 +12,10 @@ app.use(cors({
     origin : process.env.FRONTEND_URL,
     credentials : true
 }))
+
+mongoose.connect(
+  "mongodb+srv://irasubizasalynelson:nelson@chat-app.bxmi4o7.mongodb.net/NelsonTalks?retryWrites=true&w=majority&appName=chat-app"
+);
 app.use(express.json())
 app.use(cookiesParser())
 
