@@ -1,16 +1,13 @@
 {
   "version": 2,
-  "name": "nelson-talks-server",
-  "builds": [
-    {
-      "src": "server/index.js",
+  "projects": {
+    "client": {
+      "src": "./client",
+      "use": "@vercel/static-build"
+    },
+    "server": {
+      "src": "./server",
       "use": "@vercel/node"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server/index.js"
-    }
-  ]
+  }
 }
